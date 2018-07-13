@@ -10,3 +10,5 @@
 8. 安装部署插件
 	全局安装 sudo npm -g
 
+## 安装主题
+git clone https://github.com/theme-next/hexo-theme-next themes/next
