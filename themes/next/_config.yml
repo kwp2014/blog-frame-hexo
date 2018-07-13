@@ -63,14 +63,17 @@ footer:
   #since: 2015
 
   # Icon between year and copyright info.
-  icon:
+  icon: 
     # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
+    # https://fontawesome.com/icons?d=gallery
     # `heart` is recommended with animation in red (#ff0000).
-    name: user
+    # name: user
+    name: heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
-    color: "#808080"
+    # color: "#808080"
+    color: "#ff0000"
 
   # If not defined, will be used `author` from Hexo main config.
   copyright:
@@ -118,9 +121,9 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  about: /about/ || user
+  # about: /about/ || user
   tags: /tags/ || tags
-  categories: /categories/ || th
+  # categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -136,8 +139,8 @@ menu_settings:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
+#scheme: Muse
+scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
 
@@ -268,8 +271,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 140
 
 # Post meta display settings
 post_meta:
@@ -362,8 +365,7 @@ custom_logo:
 # Code Highlight theme
 # Available values: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-# highlight_theme: normal
-highlight_theme: night
+highlight_theme: normal
 
 # Enable "cheers" for archive page.
 cheers_enabled: true
@@ -523,8 +525,7 @@ gitment:
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
-#  language: # Force language, or auto switch by theme
-  language: zh-Hans
+  language: # Force language, or auto switch by theme
   github_user: # MUST HAVE, Your Github Username
   github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
   client_id: # MUST HAVE, Github client id for the Gitment
@@ -552,6 +553,9 @@ gitment:
 # Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
 # See: https://github.com/revir/need-more-share2
 # Also see: https://github.com/DzmVasileusky/needShareButton
+# cd themes/next
+# git clone https://github.com/theme-next/theme-next-needmoreshare2 source/lib/needsharebutton
+# Weibo,Wechat,Douban,QQZone,Twitter,Facebook
 # iconStyle: default | box
 # boxForm: horizontal | vertical
 # position: top / middle / bottom + Left / Center / Right
@@ -560,21 +564,21 @@ gitment:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: false
+  enable: true
   postbottom:
     enable: false
     options:
       iconStyle: box
       boxForm: horizontal
       position: bottomCenter
-      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
+      networks: Weibo,Wechat,QQZone,Twitter,Facebook
   float:
-    enable: false
+    enable: true
     options:
       iconStyle: box
       boxForm: horizontal
       position: middleRight
-      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
+      networks: Weibo,Wechat,QQZone,Twitter,Facebook
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -660,7 +664,8 @@ firestore:
 # Show Views/Visitors of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
-  enable: false
+  # enable: false 
+  enable: true
   total_visitors: true
   total_visitors_icon: user
   total_views: true
@@ -711,7 +716,8 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
-  enable: false
+  # enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
