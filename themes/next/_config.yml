@@ -76,19 +76,19 @@ footer:
     color: "#ff0000"
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright:
+  copyright: Quippy k-751@qq.com
   # -------------------------------------------------------------
   powered:
     # Hexo link (Powered by Hexo).
     enable: true
     # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
+    version: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
     enable: true
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
   #custom_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a>
@@ -252,7 +252,7 @@ sidebar:
   scrollpercent: false
 
   # Enable sidebar on narrow view (only for Muse | Mist).
-  onmobile: false
+  onmobile: true
 
 
 # ---------------------------------------------------------------
@@ -271,8 +271,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: true
-  length: 140
+  enable: false
+  length: 150
 
 # Post meta display settings
 post_meta:
@@ -298,7 +298,7 @@ symbols_count_time:
 codeblock:
   # Manual define the border radius in codeblock
   # Leave it empty for the default 1
-  border_radius:
+  border_radius: 2
   # Add copy button on codeblock
   copy_button:
     enable: false
@@ -384,7 +384,7 @@ cheers_enabled: true
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
   host:
@@ -498,14 +498,14 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  enable: true
+  appid: VVwFJ2jPwmz82WsU7yAhhCu1-gzGzoHsz
+  appkey: af3bTCVS03aKmkuK4PYgNlSn
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
-  avatar: mm # gravatar style
-  guest_info: nick,mail,link # custom comment header
+  placeholder: ヾﾉ≧∀≦)o 来呀~快活呀~ # comment box placeholder
+  avatar: identicon  # gravatar style [mm]
+  guest_info: nick,mail # custom comment header [nick,mail,link]
   pageSize: 10 # pagination size
 
 
@@ -538,7 +538,7 @@ gitment:
 #    button | slide
 # Warning: Baidu Share does not support https.
 #baidushare:
-##  type: button
+  #type: slide
 
 # Share
 # This plugin is more useful in China, make sure you known how to use it.
