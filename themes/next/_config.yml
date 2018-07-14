@@ -121,9 +121,9 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  # about: /about/ || user
+  about: /about/ || user
   tags: /tags/ || tags
-  # categories: /categories/ || th
+  #categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -157,8 +157,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
+#social: 
+  #GitHub: https://github.com/kwp2014 || github
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -170,7 +170,7 @@ site_state: true
   #Skype: skype:yourname?call|chat || skype
 
 social_icons:
-  enable: true
+  enable: false
   icons_only: false
   transition: false
   # Dependencies: exturl: true in Tags Settings section below.
@@ -365,7 +365,7 @@ custom_logo:
 # Code Highlight theme
 # Available values: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 # Enable "cheers" for archive page.
 cheers_enabled: true
@@ -553,9 +553,6 @@ gitment:
 # Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
 # See: https://github.com/revir/need-more-share2
 # Also see: https://github.com/DzmVasileusky/needShareButton
-# cd themes/next
-# git clone https://github.com/theme-next/theme-next-needmoreshare2 source/lib/needsharebutton
-# Weibo,Wechat,Douban,QQZone,Twitter,Facebook
 # iconStyle: default | box
 # boxForm: horizontal | vertical
 # position: top / middle / bottom + Left / Center / Right
@@ -564,7 +561,7 @@ gitment:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: true
+  enable: false
   postbottom:
     enable: false
     options:
@@ -573,7 +570,7 @@ needmoreshare2:
       position: bottomCenter
       networks: Weibo,Wechat,QQZone,Twitter,Facebook
   float:
-    enable: true
+    enable: false
     options:
       iconStyle: box
       boxForm: horizontal
