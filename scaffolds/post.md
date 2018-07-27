@@ -3,5 +3,5 @@ title: {{ title }}
 date: {{ date }}
 tags:
 keywords:
-description: 
+description: Please rename title and filename!
 ---
